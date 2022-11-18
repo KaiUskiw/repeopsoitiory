@@ -26,11 +26,11 @@ void setup()
   backgroundImageWidth = appWidth-1;
   backgroundImageHeight = appHeight-1;
   topX = appWidth * 1/4;
-  topY = appHeight * 0/20;
+  topY = appHeight * 11/20;
   topWidth = appWidth * 1/2;
   topHeight = appHeight * 9/20;
   bottomX = appWidth *1/4;
-  bottomY = appHeight * 12/20;
+  bottomY = appHeight * 0/20;
   bottomWidth = appWidth * 1/2;
   bottomHeight = appHeight * 9/20;
   //
@@ -40,7 +40,7 @@ void setup()
   int picWidth1 = 800; //baboon image
   int picHeight1 = 600;
   int picWidth2 = 860;//27 image
-  int picHeight2 = 529;
+  int picHeight2 = 580;
   int picWidth3 = 325; //baboon image
   int picHeight3 = 485;
   //
