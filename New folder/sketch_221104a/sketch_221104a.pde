@@ -18,21 +18,21 @@ void setup()
   appHeight = height;
   //
   //Population
-  pic1 = loadImage("../images used/baboon(1).jpg");
-  pic2 = loadImage("../images used/27.jpg");
-  pic3 = loadImage("../images used/baboon(1).jpg");
+  pic1 = loadImage("../images used/27.jpg");
+  pic2 = loadImage("../images used/baboon (1).jpg");
+  pic3 = loadImage("../images used/baboon (1).jpg");
   backgroundImageX = appWidth*0;
   backgroundImageY = appHeight*0;
   backgroundImageWidth = appWidth-1;
   backgroundImageHeight = appHeight-1;
   topX = appWidth * 1/4;
-  topY = appHeight * 1/20;
+  topY = appHeight * 0/20;
   topWidth = appWidth * 1/2;
-  topHeight = appHeight * 13/20;
-  bottomX = appWidth *1/2;
-  bottomY = appHeight * 3/4;
-  bottomWidth = appWidth * 1/4;
-  bottomHeight = appHeight * 4/20;
+  topHeight = appHeight * 9/20;
+  bottomX = appWidth *1/4;
+  bottomY = appHeight * 12/20;
+  bottomWidth = appWidth * 1/2;
+  bottomHeight = appHeight * 9/20;
   //
   //Image Dimensions for Aspect Ratio: image meta data
   //Note: meta explored in MP3's or music files
