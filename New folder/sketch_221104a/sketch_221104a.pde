@@ -1,5 +1,9 @@
 //Global Variables
-int appWidth, appHeight;
+int appWidth, appHeight, fontSize;
+float titleX, titleY, titleWidth, titleHeight;
+float footerX, footerY, footerWidth, footerHeight;
+String title = "aspect ratio", footer="no aspect ratio";
+PFont titleFont;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 float topX, topY, topWidth, topHeight;
 float bottomX, bottomY, bottomWidth, bottomHeight;
@@ -33,6 +37,20 @@ void setup()
   bottomY = appHeight * 0/20;
   bottomWidth = appWidth * 1/2;
   bottomHeight = appHeight * 9/20;
+  //
+   titleX = footerX = appWidth * 1/4;
+  titleY = appHeight * 1/10;
+  footerY = appHeight * 8/10;
+  titleWidth = footerWidth = appWidth * 1/2;
+  titleHeight = footerHeight = appHeight * 1/10;
+  //
+  String[] fontList = PFont.list(); //To list all fonts available
+  printArray(fontList); //For listing all possible fonts to choose from, then createFont
+  titleFont = createFont("Haettenschweiler", 50); //Verified the font exists in Processing.JAVA
+  //
+  rect(titleX, titleY, titleWidth, titleHeight);
+  rect(footerX, footerY, footerWidth, footerHeight);
+  //
   //
   //Image Dimensions for Aspect Ratio: image meta data
   //Note: meta explored in MP3's or music files
@@ -141,6 +159,13 @@ void setup()
 //
 void draw()
 {
+  fontSize = 50;
+   textFont(titleFont, fontSize);
+  text( title, titleX, titleY, titleWidth, titleHeight );
+  textAlign(CENTER, BOTTOM);
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  text( footer, footerX, footerY, footerWidth, footerHeight );
+  //
   image( pic2, topX, topY, picWidthAdjusted2, picHeightAdjusted2 );
   image( pic3, bottomX, bottomY, picWidthAdjusted3, picHeightAdjusted3 );
 }//End draw
